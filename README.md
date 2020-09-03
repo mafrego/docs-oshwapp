@@ -67,7 +67,7 @@ We also assume that you have your own AWS account and you are able to manage S3 
 
 ### Clone repository
 
-- Clone the two git repositories of our application(oshwapp) in two separate directories: e.g. client for Vue.js and server for Express.js
+- Clone the two git repositories of our application(oshwapp) in two separate directories: client-oshwapp and server-oshwapp
 - Clone the repo with SSH or using HTTPS:  
 `$ git clone <repo>`
 
