@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/marco/cOSHW/jubilee/macroFC/picture.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+
+import FreeCAD
+
+Gui.getDocument("jubilee").getObject("Part__Feature").Visibility=True
+firstPartName = FreeCAD.getDocument("jubilee").getObject("Part__Feature").Label
+Gui.activeDocument().activeView().viewIsometric()
+Gui.SendMsgToActiveView("ViewFit")
+Gui.activeDocument().activeView().saveImage('/home/marco/cOSHW/jubilee/png/'+firstPartName+'.png',256,256,'Transparent')
+Gui.getDocument("jubilee").getObject("Part__Feature").Visibility=False
+
+for i in range(1, 772):
+	Gui.getDocument("jubilee").getObject("Part__Feature%03d" % i).Visibility=False
+
+for i in range(1, 772):
+	Gui.getDocument("jubilee").getObject("Part__Feature%03d" % i).Visibility=True
+	partName = FreeCAD.getDocument("jubilee").getObject("Part__Feature%03d" % i).Label
+	Gui.activeDocument().activeView().viewIsometric()
+	Gui.SendMsgToActiveView("ViewFit")
+	Gui.activeDocument().activeView().saveImage('/home/marco/cOSHW/jubilee/png/'+partName+'.png',256,256,'Transparent')
+	Gui.getDocument("jubilee").getObject("Part__Feature%03d" % i).Visibility=False
+
+# Macro End: /home/marco/cOSHW/jubilee/macroFC/picture.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
