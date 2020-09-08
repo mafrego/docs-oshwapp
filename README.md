@@ -54,7 +54,7 @@ The application has the following architecture:
 
 ### Preliminary remark
 
-The following instructions for installing the application locally in dev mode are tested on Linux OS, namely Ubuntu 18.04. We can't assure that they will be appropriate for other Operating Systems.
+The following instructions for installing the application locally in dev mode are tested on Linux OS, namely Ubuntu 18.04 and 20.04. We can't assure that they will be appropriate for other Operating Systems.
 
 ### Prerequisites
 
@@ -63,7 +63,7 @@ We assume that Neo4j and Node.js are already installed and properly working on y
 - Neo4j Enterprise Edition 4.0 [donwload](https://neo4j.com/download-center/#enterprise) or, preferably, run Neo4j in Docker [how-to](https://neo4j.com/developer/docker-run-neo4j/)
 - Node.js latest LTS version (includes npm) [download](https://nodejs.org/it/download/)
 
-We also assume that you have your own AWS account and you are able to manage S3 Buckets in order to upload images. You can anyway run the application without accessing AWS S3 Buckets as long as you don't want to upload and visualize any image.
+We also assume that you have your own AWS account and you are able to manage S3 Buckets in order to upload images and BOM.csv files.
 
 ### Clone repository
 
@@ -105,12 +105,12 @@ BUCKET_NAME=your_S3_bucket_name
 AWSAccessKeyId=your_access_key_id
 AWSSecretKey=your_secret_key
 ```
-- and substitute `your_S3_bucket_name` with a name you choose and the other two values with the credetials provided by your AWS account and created in the AWS website following:  
+- and substitute `your_S3_bucket_name` with a name you choose and the other two values with the credentials provided by your AWS account and created in the AWS website following:  
 `username -> My Security Credentials -> Access keys (access key ID and secret access key) -> Create New Access Key`.
 
 ### Adding client url in the whitelist of CORS options
 
-- in the `server/src/app.js` file of server add 'http://localhost:8080' into the whitelist array or the ip of the machine running the client(Vue.js) if this is on a different device (with Linux you can find this ip using the command `ifconfig`). 
+- in the `server/src/app.js` file of server add 'http://localhost:8080' into the `whitelist` array or the ip of the machine running the client(Vue.js) if this is on a different device (with Linux you can find this ip using the command `ifconfig`). 
 
 ### Adding an .env file for the Vue environment variables
 
@@ -141,10 +141,11 @@ Let's see now all the single steps.
 
 ### Add the administrator role
 
-Since by default all users are registered with the "assembler" role, if you want to register yourself as "admin" you have to change the role manually on the file `oshwapp/server/src/controllers/AuthenticationController.js` at line 12.
+Since by default all users are registered with the "assembler" role, if you want to register yourself as "admin" you have to change the role manually.
 
 There are two ways to do that, first option:
-- Substitute the line `const roles = ["assembler"]` with the line `const roles = ["admin"]`. 
+- Go to the file `oshwapp/server/src/controllers/AuthenticationController.js`.
+- At line 12 substitute the line `const roles = ["assembler"]` with the line `const roles = ["admin"]`. 
 - Save and then register yourself in the application. 
 - Once you get your account registered with "admin" role (you can check it in the application profile or directly in the Neo4j browser), change again the role in `AuthenticationController.js` file to `const roles = ["assembler"]`.
 
@@ -154,7 +155,7 @@ Second option:
 ```
 CREATE (r:Role { name: 'admin'})
 ```
-- then the following query after substituting `UserName` with the username of the user you want to promote as the app administrator:
+- then run the following query after substituting `UserName` with the username of the user you want to promote as the app administrator:
 ```
 MATCH (a:User),(b:Role)
 WHERE a.username = 'UserName' AND b.name = 'admin'
@@ -164,7 +165,21 @@ RETURN type(r)
 
 ## Tests
 
-> this paragraph needs to be written
+### Tests on client
+
+Test types:
+- unit tests: Jest
+- integration tests: Jest
+- end to end tests: Cypress
+
+Test environment set but no tests implemented: collaboration on this point would be very appreciated.
+
+### Tests on server
+
+Test type:
+- unit test: Jest
+
+Test environment set but no tests implemented: collaboration on this point would be very appreciated.
 
 ## Status
 
@@ -172,7 +187,8 @@ The project is in progress.
 
 ## Contributing
 
-> this paragraph needs to be written
+Open to contributions:
+- first of all contribute on how to contribute: contact Marco.Fregonese@student.uibk.ac.at
 
 ## Credits
 
