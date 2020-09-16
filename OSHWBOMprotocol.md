@@ -1,6 +1,6 @@
 # OSHW BOM protocol
 
-[![version](https://img.shields.io/badge/version-0.0.1-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/BOMCHANGELOG.md)
+[![version](https://img.shields.io/badge/version-0.0.2-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/BOMCHANGELOG.md)
 
 ## Preliminary notes
 
@@ -8,13 +8,13 @@
 - Header 0. in the "BOM headers" section describes how each succesive header has to be understood. 
 - The protocol follows the [Semantic Versioning](https://semver.org/) directives.
 - The protocol is still under development: anyone interested in improving it can create an issue or write an email to [this address](mailto:marcofregonese@gmail.com).
-- A [working example](https://github.com/mafrego/docs-oshwapp/blob/master) of BOM file according to the **OSHW BOM protocol 0.0.1**. 
+- A [working example](https://github.com/mafrego/docs-oshwapp/blob/master) of BOM file according to the **OSHW BOM protocol 0.0.2**. 
 
 ## BOM filename
 
-- The file containing the BOM shall begin with the camelCase project name followed by "-BOM".
+- The file containing the BOM shall begin with the camelCase project name followed by "-bom".
 - The file extension shall be ".csv".
-- Example: "myOpenSourceProject-BOM.csv".
+- Example: "myOpenSourceProject-bom.csv".
 - Filenames are case sensitive and blank spaces are not allowed.
 
 ## BOM headers
@@ -55,47 +55,42 @@
     - `^(?:[1-9]\d*|0)?(?:\.\d+)?$`
     - required
     - cost of single atom
-7. **shippingCost**:
-    - floating point number
-    - `^(?:[1-9]\d*|0)?(?:\.\d+)?$`
-    - required
-    - cost used to ship item to buyer
-8. **totalCost**:
+7. **totalCost**:
     - floating point number
     - `^(?:[1-9]\d*|0)?(?:\.\d+)?$`
     - required
     - sum of cost of all identical atoms if moq equals 1 otherwise unitCost times a multiple of respective moq plus 
-9. **currency**:
+8. **currency**:
     - 3 capital character length string according to currency designator ISO 4217
     - `[A-Z]{3}`
     - required
     - currency relative to unitCost and totalCost
-10. **GTIN**:
+9. **GTIN**:
     - 8, 12, 13, or 14 digit length number
     - `^(\d{8}|\d{12}|\d{13}|\d{14})$`
     - recommended if available
     - [Global Trade Item Number](https://en.wikipedia.org/wiki/Global_Trade_Item_Number)
-11. **SKU**:
+10. **SKU**:
     - no standard defined: alphanumeric string with underscores, hyphens and blank spaces allowed
     - `^[-0-9a-zA-Z_. /]+$`
     - recommended
     - [Stock Keeping Unit](https://en.wikipedia.org/wiki/Stock_keeping_unit)
-12. **vendorUrl**:
+11. **vendorUrl**:
     - URL with HTTP string
     - `https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)`
     - required if relative link entry is blank
     - [Uniform Resource Locator of atom vendor](https://en.wikipedia.org/wiki/URL) 
-13. **leadTime**:
+12. **leadTime**:
     - alphanumerical upper case character string according to ISO 8601
     - `^P(?!$)(\d+(?:\.\d+)?Y)?(\d+(?:\.\d+)?M)?(\d+(?:\.\d+)?W)?(\d+(?:\.\d+)?D)?(T(?=\d)(\d+(?:\.\d+)?H)?(\d+(?:\.\d+)?M)?(\d+(?:\.\d+)?S)?)?$`
     - recommended
     - time required from the placement of an order to arrival of product at your doorstep
-14. **link**:
+13. **link**:
     - URL with HTTP string
     - `https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)`
     - required if relative vendorUrl entry is blank
     - Uniform Resource Locator of atom if custom made or not for sale 
-15. **notes**:
+14. **notes**:
     - string including any character except for commas and semicolons
     - `^[^,;]+$`
     - not required
