@@ -3,8 +3,10 @@
 ## Preliminary notes
 
 - **OSHW BOM protocol** defines the headers of a [comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values) file used as [bill of materials](https://en.wikipedia.org/wiki/Bill_of_materials) for any open source hardware product.
+- header 0. is the "template header" not used in real BOMs. 
 - this protocol follows the [Semantic Versioning](https://semver.org/) directives.
-- this protocol is still under development: anyone interested in improving it can create an issue or write an email to the mantainer of this repository. 
+- this protocol is still under development: anyone interested in improving it can create an issue or write an email to the mantainer of this repository.
+- [this]() is a working example of BOM file according to the **OSHW BOM protocol 1.0.0**. 
 
 ## BOM filename
 
@@ -74,7 +76,7 @@
 11. **SKU**:
     - no standard defined: alphanumeric string with underscores, hyphens and blank spaces allowed
     - `^[-0-9a-zA-Z_. /]+$`
-    - `recommended`
+    - recommended
     - [Stock Keeping Unit](https://en.wikipedia.org/wiki/Stock_keeping_unit)
 12. **vendorUrl**:
     - URL with HTTP string
@@ -91,7 +93,7 @@
     - `https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)`
     - required if relative vendorUrl entry is blank
     - Uniform Resource Locator of atom if custom made or not for sale 
-15. notes:
+15. **notes**:
     - string including any character except for commas and semicolons
     - `^[^,;]+$`
     - not required
