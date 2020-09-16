@@ -203,6 +203,8 @@ Here a list of tutorials I followed to solve specific problems:
 * [vue-vuex-jwt-auth](https://github.com/bezkoder/vue-vuex-jwt-auth) by bezcoder for the set up of jwt authentication and autorization in Vue.
 * [neode-example](https://github.com/adam-cowley/neode-example) by Adam Cowley for the set up of neode.
 * [upload](https://www.youtube.com/watch?v=GXe_JpBQLTQ) by Rem Zolotykh for uploading files with Vue and Express.
+* [error-handling](https://dev.to/nedsoft/central-error-handling-in-express-3aej) by Chinedu Orie for central error handling in Express. 
+
 
 ## Contacts
 

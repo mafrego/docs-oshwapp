@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - 2020-09-16
 ### Added
-- **shippingCost**
+- **shippingCost** as 7th header
+- preliminary notes
+- BOM filename section
 
  [//]: #   (Added for new features.
     Changed for changes in existing functionality.
