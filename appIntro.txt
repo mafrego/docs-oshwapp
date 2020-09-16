@@ -1,0 +1,23 @@
+Preliminary notes:
+OSHW stands for open source hardware and BOM for bill of materials.
+The app has toggleable buttons(show/hide) displaying icons, each one with a corresponding title while mouse hovering.
+The app uses free servers going into sleep mode if not been used for longer than 30 minutes: in case servers are sleeping just wait a little or refresh the page to wake them up. Sorry for this incovenience but I'm using free servers!
+
+1. The primary feature of the OSHW APP is the so-called "oshw search engine".
+Every user can visualize the tree structure of an oshw product and get all the relevant info about its parts and assemblies in addition to its downloadable BOM.
+The app is still under development, so at the moment there are only three oshw products for testing purposes (just click the "search" button).
+
+2. The crucial point to make the app work properly is the so-called "open source hardware BOM protocol" that I defined in order to standardize all the oshw BOMs (just click "help" -> "BOM protocol" button to see the protocol definition). 
+Oshw BOM protocol is still under development: any suggestion for improving it would be very appreciated.
+
+3. A registered user can create his/her own oshw projects, then for each project he/she can upload the corresponding BOM.
+It's also possible to upload pictures for each element of the BOM.
+
+4. Once a project has been created and the corresponding BOM uploaded, the registered user can start assembling all the single elements of the BOM, step by step, until he/she gets the final assembly, that is the oshw product.
+
+5. Then this oshw product once released will be displayed on the search page so that anyone interested in that product can visualize its tree structure and get all the information about its parts and assemblies in addition to its downloadable BOM (that is point 1.)
+
+To get an idea of the workflow (creating project, uploading BOM and assembling) you can watch the video tutorial (click "help" -> "video tutorial") or read the HOW-TO section (click "help" -> "HOW-TO").
+App license: AGPL3.
+For the links of the source code: go to "help" -> "contact-about".
+For more info just click "help".
