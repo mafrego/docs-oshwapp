@@ -1,4 +1,6 @@
-# OSHW BOM protocol 1.0.0
+# OSHW BOM protocol
+
+[![version](https://img.shields.io/badge/version-0.0.1-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/BOMCHANGELOG.md)
 
 ## Preliminary notes
 
@@ -10,9 +12,9 @@
 
 ## BOM filename
 
-- The file containing the BOM shall begin with the project name followed by "-BOM".
+- The file containing the BOM shall begin with the camelCase project name followed by "-BOM".
 - The file extension shall be ".csv".
-- Example: "myproject-BOM.csv".
+- Example: "myOpenSourceProject-BOM.csv".
 - Filenames are case sensitive and blank spaces are not allowed.
 
 ## BOM headers

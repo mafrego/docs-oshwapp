@@ -1,6 +1,6 @@
 # OSHW Web App
 
-[![version](https://img.shields.io/badge/version-0.0.1-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/CHANGELOG.md)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 Web application for searching open source hardware products and managing their versions.
@@ -66,7 +66,7 @@ We assume that Neo4j and Node.js are already installed and properly working on y
 - Neo4j Enterprise Edition 4.0 [donwload](https://neo4j.com/download-center/#enterprise) or, preferably, run Neo4j in Docker [how-to](https://neo4j.com/developer/docker-run-neo4j/)
 - Node.js latest LTS version (includes npm) [download](https://nodejs.org/it/download/)
 
-We also assume that you have your own AWS account and you are able to manage S3 Buckets in order to upload images and BOM.csv files.
+We also assume that you have your own AWS account and you are able to manage S3 Buckets in order to upload images and [`yourProject-BOM.csv`](https://github.com/mafrego/docs-oshwapp/blob/master/OSHWBOMprotocol.md) files.
 
 ### Clone repository
 
@@ -203,10 +203,6 @@ Here a list of tutorials I followed to solve specific problems:
 * [vue-vuex-jwt-auth](https://github.com/bezkoder/vue-vuex-jwt-auth) by bezcoder for the set up of jwt authentication and autorization in Vue.
 * [neode-example](https://github.com/adam-cowley/neode-example) by Adam Cowley for the set up of neode.
 * [upload](https://www.youtube.com/watch?v=GXe_JpBQLTQ) by Rem Zolotykh for uploading files with Vue and Express.
-
-## License
-
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 ## Contacts
 
