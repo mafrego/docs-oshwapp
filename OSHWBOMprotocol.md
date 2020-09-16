@@ -8,7 +8,7 @@
 - Header 0. in the "BOM headers" section describes how each succesive header has to be understood. 
 - The protocol follows the [Semantic Versioning](https://semver.org/) directives.
 - The protocol is still under development: anyone interested in improving it can create an issue or write an email to [this address](mailto:marcofregonese@gmail.com).
-- A [working example](https://github.com/mafrego/docs-oshwapp/blob/master) of BOM file according to the **OSHW BOM protocol 0.0.2**. 
+- A [working example](https://github.com/mafrego/docs-oshwapp/blob/master/template/bom/miniHouse-bom.csv) of BOM file according to the **OSHW BOM protocol 0.0.2**. 
 
 ## BOM filename
 
