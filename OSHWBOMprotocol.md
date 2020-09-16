@@ -4,11 +4,11 @@
 
 ## Preliminary notes
 
-- **OSHW BOM protocol** defines the headers of a [comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values) file used as [bill of materials](https://en.wikipedia.org/wiki/Bill_of_materials) for any open source hardware product.
-- header 0. is the "template header" not used in real BOMs. 
-- this protocol follows the [Semantic Versioning](https://semver.org/) directives.
-- this protocol is still under development: anyone interested in improving it can create an issue or write an email to the mantainer of this repository.
-- [this]() is a working example of BOM file according to the **OSHW BOM protocol 1.0.0**. 
+- The **OSHW BOM protocol** defines the headers of a [comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values) file used as [bill of materials](https://en.wikipedia.org/wiki/Bill_of_materials) for any open source hardware product.
+- Header 0. in the "BOM headers" section describes how each succesive header has to be understood. 
+- The protocol follows the [Semantic Versioning](https://semver.org/) directives.
+- The protocol is still under development: anyone interested in improving it can create an issue or write an email to [this address](mailto:marcofregonese@gmail.com).
+- A [working example](https://github.com/mafrego/docs-oshwapp/blob/master) of BOM file according to the **OSHW BOM protocol 0.0.1**. 
 
 ## BOM filename
 
