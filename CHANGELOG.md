@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - external link to each atom on product tree view
 - external link to assembly on product tree view
-- assembly instruction on assembly form
+- assembly instructions on assembly form
 - assembly instructions on product tree view
 
 ### Fixed
