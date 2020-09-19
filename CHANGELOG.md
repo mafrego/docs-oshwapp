@@ -3,6 +3,11 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.3] - 2020-09-18
+### Changed
+- download BOM as .csv file with values without quotes
+- download BOM as file with filename projectname-bom.csv 
+
 ## [1.0.2] - 2020-09-18
 ### Added
 - search by atom name

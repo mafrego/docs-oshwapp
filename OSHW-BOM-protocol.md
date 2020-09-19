@@ -12,10 +12,11 @@
 
 ## BOM filename
 
-- The file containing the BOM shall begin with the camelCase project name followed by "-bom".
+- The file containing the BOM shall begin with the project name followed by "-bom".
 - The file extension shall be ".csv".
-- Example: "myOpenSourceProject-bom.csv".
+- Example: "myopensourceproject-bom.csv".
 - Filenames are case sensitive and blank spaces are not allowed.
+- Filenames are recommended to be lower case.
 
 ## BOM headers
 
