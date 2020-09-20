@@ -23,7 +23,7 @@
 0. **headerName**:
     - allowed header format
     - corresponding regex
-    - required/recommended
+    - deonticity: required, recommended or optional
     - header description
 ---
 1. **itemNumber**:
