@@ -1,6 +1,6 @@
 # OSHW Web App
 
-[![version](https://img.shields.io/badge/version-1.0.3-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-1.4.0-blue)](https://github.com/mafrego/docs-oshwapp/blob/master/CHANGELOG.md)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 
 Web application for searching open source hardware products and managing their versions.

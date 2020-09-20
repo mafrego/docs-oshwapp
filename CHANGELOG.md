@@ -5,7 +5,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.0] - 2020-09-20
 ### Added
-- 
+- atoms CRUD on BOM panel
 
 ## [1.3.1] - 2020-09-19
 ### Changed
@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.3.0] - 2020-09-18
 ### Added
 - search by atom name
-- upload bom.csv file video
+- "upload bom.csv file" video
 
 ## [1.2.0] - 2020-09-17
 ### Added
