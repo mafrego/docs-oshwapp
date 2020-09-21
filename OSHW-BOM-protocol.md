@@ -55,7 +55,7 @@
     - floating point number
     - `^(?:[1-9]\d*|0)?(?:\.\d+)?$`
     - required
-    - cost of single atom
+    - cost of a single atom if moq equals 1 otherwise cost of a moq
 7. **totalCost**:
     - floating point number
     - `^(?:[1-9]\d*|0)?(?:\.\d+)?$`
