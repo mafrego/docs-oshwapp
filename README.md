@@ -107,6 +107,7 @@ JWT_SECRET=your_jwt_secret_word
 BUCKET_NAME=your_S3_bucket_name
 AWSAccessKeyId=your_access_key_id
 AWSSecretKey=your_secret_key
+AWS_S3_BASE_URL=https://your_S3_bucket_name.s3.eu-central-1.amazonaws.com/
 ```
 - and substitute `your_S3_bucket_name` with a name you choose and the other two values with the credentials provided by your AWS account and created in the AWS website following:  
 `username -> My Security Credentials -> Access keys (access key ID and secret access key) -> Create New Access Key`.
