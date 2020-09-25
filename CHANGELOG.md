@@ -3,6 +3,13 @@
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2020-09-25
+### Added
+- possibility to update quantity of atoms left to assemble
+
+### Changed
+- layout of input forms 
+
 ## [1.4.0] - 2020-09-20
 ### Added
 - atoms CRUD on BOM panel
